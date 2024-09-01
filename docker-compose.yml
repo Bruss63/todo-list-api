@@ -8,8 +8,9 @@ services:
     volumes:
       - /app/node_modules
       - .:/app
-    env_file:
-      - .env
+    environment:
+      - DATABASE_URL=mysql://root:VEnEheqMBjLNbIErIZwCdDcmbklGd1FsRL36rU6kZjg=@host.docker.internal:3306/todo-api?schema=public
+    command: /bin/sh -c "npm install && npm run start:dev"
 
   db:
     image: mysql:latest
