@@ -16,8 +16,6 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: VEnEheqMBjLNbIErIZwCdDcmbklGd1FsRL36rU6kZjg=
       MYSQL_DATABASE: todo-api
-      MYSQL_USER: admin
-      MYSQL_PASSWORD: p4o+obJevgOO1ut3z99ZaP8mn0Y2+rC01eyt6XpvT3w=
     ports:
       - "3306:3306"
     volumes:
