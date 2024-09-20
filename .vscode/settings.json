@@ -13,5 +13,6 @@
       "username": "root",
       "database": "todo-api"
     }
-  ]
+  ],
+  "editor.tabSize": 2
 }

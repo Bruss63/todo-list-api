@@ -5,10 +5,10 @@ FROM node:20.11.1-alpine3.19
 WORKDIR /app
 
 # Copy the package.json file into the container at /app
-COPY package.json /app
+COPY package.json yarn.lock /app/
 
 # Install the dependencies and make the folder
-RUN npm install
+RUN yarn install
 
 # Copy the rest of the application code into the container
 COPY . /app
@@ -17,4 +17,4 @@ COPY . /app
 EXPOSE 3000
 
 # Run the app when the container launches
-CMD ["npm", "run","start:dev"]
+CMD ["yarn", "run","start:dev"]
